@@ -2,6 +2,7 @@ body
 {
     font-family: 'Oxygen', sans-serif;
     margin: 0;
+    background-color: #FAFAFA;
 }
 
 h1, h2, h3, h4, h5, h6 
@@ -38,6 +39,7 @@ h2
     -webkit-text-fill-color: transparent;
     font-size: 24px;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 ol, ul
@@ -73,6 +75,7 @@ figure
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image
@@ -83,8 +86,7 @@ figure
 .portfolio
 {
     background: #FAFAFA;
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 0 20px 40px;
 }
 
 .project
@@ -104,6 +106,7 @@ figure
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project-techs, .project-date, .project-url
@@ -130,12 +133,17 @@ figure
 
 .project-details
 {
-    width: 500px;
+    width: 50%;
 }
 
-.projec-imageContainer
+.project-imageContainer
 {
-    width: 500px;
+    width: 50%;
+}
+
+.project-imageContainer img 
+{
+    max-width: 100%;
 }
 
 .header
@@ -146,6 +154,7 @@ figure
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu
@@ -181,6 +190,7 @@ figure
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer img
@@ -202,16 +212,19 @@ figure
 
 .experience-list-title
 {
-    margin-top: 40px;
+    margin: 0 0 40px;
+}
+
+.div-container
+{
     margin-left: 20px;
-    margin-bottom: 30px;
 }
 
 .event
 {
-    margin: 10px;
-    width: 480px;
-    height: 460px;
+    margin: 0 1% 2%;
+    width: 48%;
+    height: auto;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -233,6 +246,11 @@ figure
     position: relative;
     padding: 20px;
     text-align: center;
+}
+
+.event-title
+{
+    margin-top: 0;
 }
 
 .event-description
@@ -258,6 +276,7 @@ figure
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .social-link
@@ -319,11 +338,152 @@ figure
 
 .container
 {
-    width: 1000px;
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+}
+
+@media screen and (max-width: 1024px)
+{
+
+}
+
+@media screen and (max-width: 767.98px)
+{
+    .header
+    {
+        display: block;
+        height: auto;
+    }
+
+    .header ul
+    {
+        display: block;
+    }
+
+    .header ul li
+    {
+        height: 50px;
+        text-align: center;
+    }
+
+    .header a 
+    {
+        justify-content: center;
+    }
+
+    .header .logo 
+    {
+        text-align: center;
+    }
+
+    .project
+    {
+        display: block;
+    }
+
+    .project-imageContainer
+    {
+        width: auto;
+        text-align: center;
+    }
+
+    .project-details
+    {
+        width: auto;
+    }
+
+    .project-techs, .project-date, .project-url
+    {
+        margin: .3em 0;
+    }
+
+    .project-title
+    {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url
+    {
+        font-size: 1em;
+    }
+
+    .project-techs
+    {
+        font-size: 0.7em;
+    }
+
+    .project-date
+    {
+        font-size: 1em;
+    }
+
+    .project-description
+    {
+        font-size: 0.8em;
+    }
+
+    .experience-list
+    {
+        justify-content: center;
+    }
+
+    .experience-list-title
+    {
+        margin-top: 0;
+    }
+
+    .event
+    {
+        width: 95%;
+        flex-shrink: initial;
+    }
+
+    .event-detail
+    {
+        margin: -2em 2em 2em 2em;
+    }
+    
+    .event-title
+    {
+        font-size: 1em;
+    }
+
+    .event-description
+    {
+        font-size: 0.8em;
+    }
+
+    .event img 
+    {
+        width: 100%;
+        height: 12.5em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .project-details
+    {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .event-detail
+    {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    
 }
