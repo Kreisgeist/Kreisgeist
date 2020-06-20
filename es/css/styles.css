@@ -347,16 +347,79 @@ figure
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
-    padding: 0 1em;
+
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 2559.98px)
 {
+    .container
+    {
+        padding: 0 1em;
+    }
 
+    .hero
+    {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: 65%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 15%;
+        height: auto;
+    }
+
+    h1 
+    {
+        font-size: 2em;
+        z-index: 2;
+    }
+
+    .experience-list-title
+    {
+        padding-left: 9.3em;
+    }
+}
+
+@media screen and (max-width: 1023.98px)
+{
+    .hero-image
+    {
+        width: 22%;
+    }
+
+    .experience-list-title
+    {
+        padding-left: 0;  
+    }
 }
 
 @media screen and (max-width: 767.98px)
 {
+    h2
+    {
+        text-align: center;
+    }
+
+    .experience-list-title
+    {
+        padding-left: initial;  
+    }
+
+    .hero-image
+    {
+        left: 1;
+        width: 28%;
+    }
+
     .header
     {
         display: block;
@@ -466,9 +529,20 @@ figure
 
 @media screen and (max-width: 479.98px)
 {
+    h1 
+    {
+        font-size: 1.5em;
+    }
+    
     h2
     {
         text-align: center;
+    }
+
+    .hero-image
+    {
+        left: 1;
+        width: 36%;
     }
 
     .project-details
@@ -525,5 +599,13 @@ figure
 
 @media screen and (max-width: 320px)
 {
+    h1 
+    {
+        font-size: 1.2em;
+    }
 
+    .hero
+    {
+        padding: 2em 1em;
+    }
 }
