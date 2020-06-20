@@ -597,11 +597,11 @@ figure
     }
 }
 
-@media screen and (max-width: 399.98px)
+@media screen and (max-width: 408.98px)
 {
     h1 
     {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .hero
@@ -612,6 +612,25 @@ figure
     
     .hero-image
     {
-        width: 43%;
+        width: 39%;
+    }
+}
+
+@media screen and (max-width: 319.98px)
+{
+    h1 
+    {
+        font-size: 1.2em;
+    }
+
+    .hero
+    {
+        padding: 2em 0;
+    }
+
+    
+    .hero-image
+    {
+        width: 46%;
     }
 }
