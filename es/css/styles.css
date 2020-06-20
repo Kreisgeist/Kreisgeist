@@ -86,7 +86,7 @@ figure
 .portfolio
 {
     background: #FAFAFA;
-    padding: 0 20px 40px;
+    padding: 0 20px;
 }
 
 .project
@@ -212,12 +212,12 @@ figure
 
 .experience-list-title
 {
-    margin: 0 0 40px;
+    margin: 40px 0;
 }
 
 .div-container
 {
-    margin-left: 20px;
+    padding: 0 2.25em;
 }
 
 .event
@@ -347,6 +347,7 @@ figure
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+    padding: 0 1em;
 }
 
 @media screen and (max-width: 1024px)
@@ -435,11 +436,6 @@ figure
         justify-content: center;
     }
 
-    .experience-list-title
-    {
-        margin-top: 0;
-    }
-
     .event
     {
         width: 95%;
@@ -450,10 +446,10 @@ figure
     {
         margin: -2em 2em 2em 2em;
     }
-    
+
     .event-title
     {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .event-description
@@ -468,8 +464,13 @@ figure
     }
 }
 
-@media screen and (max-width: 480px)
+@media screen and (max-width: 479.98px)
 {
+    h2
+    {
+        text-align: center;
+    }
+
     .project-details
     {
         width: auto;
@@ -481,9 +482,48 @@ figure
         margin: -2em .5em .5em;
         padding: 1em;
     }
+    .event-title
+    {
+        font-size: 1.13em;
+    }
+
+    .event-description
+    {
+        font-size: 0.6em;
+    }
+
+    .event-url
+    {
+        font-size: 0.8em;
+    }
+
+    .contact
+    {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button 
+    {
+        margin: 1em auto;
+    }
+
+    .form-email h3 
+    {
+        margin-top: 0;
+    }
+
+    .footer
+    {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 320px)
 {
-    
+
 }
