@@ -16,99 +16,149 @@
 
 <body>
     <header class="header">
-
-        <figure class="logo">
-            <img src="images/logo/logo.png" height="50px" alt="Logo de https://kreisgeist.github.io/es/" />
-        </figure>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a class="link" href="#portfolio">Portafolio</a>
-                </li>
-                <li>
-                    <a class="link" href="#experience">Experiencia</a>
-                </li>
-                <li>
-                    <a class="link" href="#formation">Formación</a>
-                </li>
-                <li>
-                    <a class="link" href="#contact">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo/logo.png" height="50px" alt="Logo de https://kreisgeist.github.io/es/" />
+            </figure>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#experiences-title">Experiencia</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#formation">Formación</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="hero">
-        <h1>
-            ¡Hola!, Soy <strong>Enrique Lino</strong> <br /> Desarrollador <strong>Fullstack</strong> con <br /> pasión
-            por la <strong>tecnología</strong>
-        </h1>
-        <!-- <img src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio" /> -->
+        <div class="container">
+            <h1>
+                ¡Hola!, Soy <strong>Enrique Lino</strong> <br /> Desarrollador <strong>Fullstack</strong> con <br /> pasión
+                por la <strong>tecnología</strong>
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio" />
+        </div>
     </section>
     <section id="portfolio" class="portfolio">
-        <h2>Portafolio</h2>
-        <article class="project">
-            <div class="project-details">
-                <h3 class="project-title">Servicio Técnico</h3>
-                <h6 class="project-techs">HTML5 / CSS / JavaScript</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong>
-                        https://github.com/Kreisgeist/ServicioTecnico</small></p>
-                <p class="project-description">Este modelo de diseño Frontend fue mi primer proyecto personal para poner
-                    en práctica mis conocimientos
-                    sobre diseño de interfaces (UI/UX) utilizando HTML5, CSS y JavaScript. El sitio fue diseñado para
-                    ser responsivo y ha tenido distintas fases de desarrollo que han ido acorde a mi aprendizaje.
-                </p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="images/servicio.jpg" alt="proyecto de servicio técnico" width="500" />
-            </figure>
-        </article>
-    </section>
-    <section id="experience" class="experience">
-        <h2>Más sobre mi experiencia</h2>
-        <article class="event">
-            <figure class="event-imageContainer">
-                <img class="event-image" src="images/platzi.PNG" width="500" alt="Cursos en Platzi" width="500" />
-            </figure>
-            <h3 class="event-title">Platzi</h3>
-            <p class="event-description">A inicios del año 2020, tras el comienzo de la pandemia por COVID-19, decidi
-                darle un giro a mi vida y
-                comenzar a realizar cursos en linea en una maravillosa plataforma, que ha cambiado el rumbo de mi
-                aprendizaje.
-            </p>
-            <a class="event-url" href="https://platzi.com/@Kreis/">Ver más</a>
-        </article>
+        <div class="container">
+            <h2>Portafolio</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Servicio Técnico</h3>
+                    <h6 class="project-techs">HTML5 / CSS / JavaScript</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2020</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong>
+                            https://github.com/Kreisgeist/ServicioTecnico</small></p>
+                    <p class="project-description">Este modelo de diseño Frontend fue mi primer proyecto personal para poner
+                        en práctica mis conocimientos
+                        sobre diseño de interfaces (UI/UX) utilizando HTML5, CSS y JavaScript. El sitio fue diseñado para
+                        ser responsivo y ha tenido distintas fases de desarrollo que han ido acorde a mi aprendizaje.
+                    </p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/servicio.jpg" alt="proyecto de servicio técnico" width="500" />
+                </figure>
+            </article>
+        </div>
     </section>
     <section id="formation" class="formation">
-        <h2>Formación</h2>
-        <article class="course">
-            <figure class="course-imageContainer">
-                <img class="course-image" src="images/upiicsa.PNG" width="500" alt="Cursos en Platzi" width="500" />
-            </figure>
-            <h3 class="course-title">Ingeniería</h3>
-            <p class="course-description">En el año 2020 me gradué de la carrera de Ingeniería en Informática de la
-                UPIICSA del Instituto Politecnico Nacional</p>
-            <a class="course-url" href="https://www.upiicsa.ipn.mx/" target="_blank">Ver Información</a>
-        </article>
+        <div class="container">
+            <h2>Formación</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Ingeniería</h3>
+                    <p class="project-description">En el año 2020 me gradué de la carrera de Ingeniería en Informática de la
+                        UPIICSA del Instituto Politecnico Nacional</p>
+                    <a class="event-url" href="https://www.upiicsa.ipn.mx/" target="_blank">Ver Información</a>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/upiicsa.PNG" width="500" alt="Cursos en Platzi" width="500" />
+                </figure>
+            </article>
+        </div>
+    </section>
+    <section id="experiences" class="experience-list">
+        <div class="container">
+            <h2 class="experience-list-title">Más sobre mi experiencia</h2>
+        </div>
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi.PNG" width="500" alt="Cursos en Platzi" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi</h3>
+                    <p class="event-description">A inicios del año 2020, tras el comienzo de la pandemia por COVID-19, decidi darle un giro a mi vida y comenzar a realizar cursos en linea en una maravillosa plataforma, que ha cambiado el rumbo de mi aprendizaje.</p>
+                    <a class="event-url" href="https://platzi.com/@Kreis/">Ver más</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi.PNG" width="500" alt="Cursos en Platzi" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi</h3>
+                    <p class="event-description">A inicios del año 2020, tras el comienzo de la pandemia por COVID-19, decidi darle un giro a mi vida y comenzar a realizar cursos en linea en una maravillosa plataforma, que ha cambiado el rumbo de mi aprendizaje.</p>
+                    <a class="event-url" href="https://platzi.com/@Kreis/">Ver más</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi.PNG" width="500" alt="Cursos en Platzi" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi</h3>
+                    <p class="event-description">A inicios del año 2020, tras el comienzo de la pandemia por COVID-19, decidi darle un giro a mi vida y comenzar a realizar cursos en linea en una maravillosa plataforma, que ha cambiado el rumbo de mi aprendizaje.</p>
+                    <a class="event-url" href="https://platzi.com/@Kreis/">Ver más</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image" src="images/platzi.PNG" width="500" alt="Cursos en Platzi" width="500" />
+                </figure>
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi</h3>
+                    <p class="event-description">A inicios del año 2020, tras el comienzo de la pandemia por COVID-19, decidi darle un giro a mi vida y comenzar a realizar cursos en linea en una maravillosa plataforma, que ha cambiado el rumbo de mi aprendizaje.</p>
+                    <a class="event-url" href="https://platzi.com/@Kreis/">Ver más</a>
+                </div>
+            </article>
+        </div>
     </section>
     <section id="contact" class="contact">
-        <form class="form-email" action="/suscripcion/">
-            <h3>¿Creamos algo juntos?</h3>
-            <input type="text" placeholder="Déjame tu email" id="email" />
-            <button>Enviar</button>
-        </form>
+        <div class="container">
+            <form class="form-email" action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" id="email" />
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="https://twitter.com/Kreisgeist" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/victorenrique.linohernandez" class="social-link facebook"></a>
+                <a href="https://github.com/Kreisgeist" class="social-link github"></a>
+                <a href="https://www.instagram.com/venrique_lino/" class="social-link instagram"></a>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        <div>
-            <p>
-                Enrique Lino 2020 <img src="images/logo/logo.png" width="80px" alt="Logo de https://kreisgeist.github.io/es/" />
-            </p>
-        </div>
-        <div>
-            <p>
-                Diseñado con <\3 por <a href="https://twitter.com/Kreisgeist">@Kreisgeist</a>
-            </p>
+        <div class="container">
+            <div>
+                <p>
+                    Enrique Lino 2020 <img src="images/logo/logo.png" width="80px" alt="Logo de https://kreisgeist.github.io/es/" />
+                </p>
+            </div>
+            <div>
+                <p>
+                    Diseñado con 💚 por <a href="https://twitter.com/Kreisgeist">@Kreisgeist</a>
+                </p>
+            </div>
         </div>
     </footer>
 </body>
