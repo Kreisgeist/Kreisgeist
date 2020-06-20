@@ -527,11 +527,11 @@ figure
     }
 }
 
-@media screen and (max-width: 479.98px)
+@media screen and (max-width: 575.98px)
 {
     h1 
     {
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
     }
     
     h2
@@ -548,27 +548,12 @@ figure
     .project-details
     {
         width: auto;
-        font-size: 12px;
     }
 
     .event-detail
     {
         margin: -2em .5em .5em;
         padding: 1em;
-    }
-    .event-title
-    {
-        font-size: 1.13em;
-    }
-
-    .event-description
-    {
-        font-size: 0.6em;
-    }
-
-    .event-url
-    {
-        font-size: 0.8em;
     }
 
     .contact
@@ -613,6 +598,26 @@ figure
     .hero-image
     {
         width: 39%;
+    }
+
+    .event-title
+    {
+        font-size: 1.13em;
+    }
+
+    .event-description
+    {
+        font-size: 0.6em;
+    }
+
+    .event-url
+    {
+        font-size: 0.8em;
+    }
+
+    .project-details
+    {
+        font-size: 0.7em;
     }
 }
 
