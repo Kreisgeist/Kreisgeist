@@ -1,5 +1,178 @@
-header{
-    background: pink;
+body 
+{
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
 }
 
-.
+h1, h2, h3, h4, h5, h6 
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1 
+{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /* text-transform: uppercase; */
+    /* text-decoration: underline; */
+}
+
+h1 strong 
+{
+    background: linear-gradient(to right,#FF0000, #D11507, #A51B0B, #7A1B0C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2
+{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right,#FF0000, #D11507, #A51B0B, #7A1B0C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure
+{
+    margin: 0;
+}
+
+.hero
+{
+    height: 300px;
+    background-image: url('../images/hero.jpg');
+    background-color: #000;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+}
+
+.portfolio
+{
+    background: #FAFAFA;
+    padding: 20px;
+}
+
+.project
+{
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid orange;
+    border-bottom: 10px solid pink; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-techs, .project-date, .project-url
+{
+    margin: 10px 0;
+}
+
+.project-description
+{
+ font-size: 18px;   
+}
+
+.project strong
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-details
+{
+    width: 500px;
+}
+
+.projec-imageContainer
+{
+    width: 500px;
+}
+
+.header
+{
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.menu
+{
+    height: inherit;
+}
+
+.header ul
+{
+    display: flex;
+    height: inherit;
+}
+
+.header ul li
+{
+    height: inherit;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer
+{
+    background-color: #000;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.footer img
+{
+    vertical-align: middle;
+}
+
+.footer a
+{
+    color: white;
+}
+
