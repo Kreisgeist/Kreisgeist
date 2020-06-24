@@ -388,7 +388,7 @@ figure
     height: 40px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
-    display: none;
+    display: block;
     line-height: 40px;
     text-align: center;
     position: absolute;
