@@ -1,0 +1,450 @@
+body
+{
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?4e7ks8');
+    src:  url('fonts/icomoon.eot?4e7ks8#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?4e7ks8') format('truetype'),
+      url('fonts/icomoon.woff?4e7ks8') format('woff'),
+      url('fonts/icomoon.svg?4e7ks8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-home:before {
+    content: "\e902";
+  }
+  .icon-conf:before {
+    content: "\e994";
+  }
+  .icon-trending:before {
+    content: "\e9a9";
+  }
+  .icon-like:before {
+    content: "\e9da";
+  }  
+
+
+.container
+{
+    display: grid;
+    grid-template: 45px 1fr / 80px 1fr;
+    height: 100vh;
+    grid-template-areas: "nav nav"
+                         "lat content";
+}
+
+.nav
+{
+    background: white;
+    grid-area: nav;
+    display: flex;
+    box-shadow: 5px 2px 5px 1px #dbdbe2;
+}
+
+.logo
+{
+    height: 45px;
+    width: 100px;
+    margin: 0 5% 0 25px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.logo .logo-image
+{
+    height: 100%;
+}
+
+.searcher
+{
+    height: 25px;
+    width: 40%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    border: 1px solid #dbdbe2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.user-name
+{
+    font-weight: bold;
+    width: 110px;
+    margin: 11px 1% 11px 1%; 
+    text-align: right;
+    align-self: center;
+    cursor: pointer;
+}
+
+.user-picture
+{
+    margin: 5px 0;
+    height: 35px;
+    border-radius: 50%;
+    background: lightblue;
+    cursor: pointer;
+}
+
+.user-picture img
+{
+    height: 100%;
+}
+
+.more
+{
+    width: 20px;
+    margin: 0 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.more img
+{
+    height: 15px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.lat
+{
+    background: rgb(249, 188, 80);
+    color: white;
+    display: grid;
+    grid-template-rows: 70px 70px 70px 1fr;
+    grid-template-columns: 60px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 10px 30px 10px;
+    font-size: 14px;
+}
+
+.lat p
+{
+    margin: 0;
+}
+
+.lat i
+{
+    font-size: 1.4em;
+}
+
+.home, 
+.trending,
+.like
+{
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.conf
+{
+    cursor: pointer;
+    height: auto;
+    text-align: center;
+    align-self: flex-end;
+}
+
+.cont 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 70px 20px 70px;
+    column-gap: 70px;
+}
+
+.title
+{
+    grid-column-end: span 3;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+
+.movie
+{
+  height: 180px;
+  position: relative;
+  cursor: pointer;
+}
+
+.movie-pic
+{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.movie-pic img
+{
+    width: 100%;
+}
+
+.movie-overlay
+{
+    background: rgba(0, 0, 0, .4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1;
+    bottom: 0;
+    display: block;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    height: auto;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.movie-title
+{
+    margin: 0;
+    display: block;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.movie-description
+{
+    margin: 0;
+    font-size: .7em;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1369.98px)
+{
+    .user-name
+    {
+        font-size: 0.8em;
+    }
+
+    .more
+    {
+        width: 10px;
+        margin: 0 8px;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .movie-pic
+    {
+        height: 70%;
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .cont
+    {
+        padding: 0 30px 10px 30px;
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+
+    .title
+    {
+        margin-top: 0;
+    }
+
+    .movie-overlay
+    {
+        height: auto;
+        background: rgb(249, 188, 80);
+    }
+
+    .movie-title
+    {
+        font-size: 0.8em;
+        margin-top: 10px;
+    }
+
+    .movie-description
+    {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 767.98px)
+{
+    .container
+    {
+        display: grid;
+        grid-template: 45px 1fr / 60px 1fr;
+        height: 100vh;
+        grid-template-areas: "nav nav"
+                             "lat content";
+    }
+
+    .logo
+    {
+        height: 100%;
+        width: 130px;
+        margin: 0 5% 0 25px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    ::placeholder
+    {
+        font-size: 0.7em;
+    }
+
+    .user-name
+    {
+        font-size: 0.7em;
+    }
+
+    .user-picture
+    {
+        height: 70%;
+        margin-top: 7px;
+    }
+
+    .lat
+    {
+        font-size: 0.7em;
+        grid-template-columns: 40px;
+    }
+
+    .lat i
+    {
+        font-size: 1.6em;
+    }
+    
+    .title
+    {
+        margin-top: 5px;
+    }
+
+    .cont
+    {
+        padding: 0 30px 10px 30px;
+        column-gap: 20px;
+        row-gap: 15px;
+    }
+
+    .movie-title
+    {
+        font-size: 0.7em;
+        margin-top: 10px;
+    }
+
+    .movie-description
+    {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 575.98px)
+{
+    .container
+    {
+        display: grid;
+        grid-template: 45px 1fr / 60px 1fr;
+        height: 100vh;
+        grid-template-areas: "nav nav"
+                             "lat content";
+    }
+
+    .logo
+    {
+        height: 100%;
+        width: 130px;
+        margin: 0 3% 0 0;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .searcher
+    {
+        margin-left: 10%;
+    }
+
+    ::placeholder
+    {
+        font-size: 0.6em;
+    }
+
+    .user-name
+    {
+        font-size: 0.6em;
+    }
+
+    .user-picture
+    {
+        height: 50%;
+        margin-top: 10px;
+    }
+
+    .lat
+    {
+        font-size: 0.7em;
+        grid-template-columns: 40px;
+    }
+
+    .lat i
+    {
+        font-size: 1.5em;
+    }
+    
+    .title
+    {
+        margin-top: 5px;
+    }
+
+    .cont
+    {
+        padding: 0 30px 10px 30px;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .movie
+    {
+        height: 130px;
+    }
+
+    .movie-overlay
+    {
+        padding: 0 5px 5px 5px;
+    }
+
+    .movie-pic
+    {
+        height: 50%;
+    }
+
+    .movie-title
+    {
+        font-size: 0.5em;
+        margin-top: 10px;
+    }
+
+    .movie-description
+    {
+        font-size: 0.4em;
+    }
+}
